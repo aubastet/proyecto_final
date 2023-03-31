@@ -1,1 +1,16 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/**************generales************//*# sourceMappingURL=style.css.map */
