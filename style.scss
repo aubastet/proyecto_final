@@ -1,19 +1,199 @@
 $colorNegro: #000;
 $colorBlanco: #fff;
-$colorGris: #373737;
+$colorGris: #7a7a7a;
 $colorAzul: #546b91;
 
-html{
-    font-size: 62.5%;
+body {
+  box-sizing: border-box;
 }
-body{
-    font-size: 1.6rem;
-    box-sizing: border-box;
+.container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
 }
-.container{
-    width: 120rem;
-    max-width: 90%;
-    margin: 0 auto;
+/**************generales************/
+.header {
+  background-image: url(./assets/fondo-inicio-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .navbar-brand {
+    color: $colorBlanco;
+  }
+  .nav-link {
+    color: $colorBlanco;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 80px;
+    color: $colorBlanco;
+    text-transform: uppercase;
+  }
+  &__slogan {
+    color: $colorAzul;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: $colorBlanco;
+    max-width: max-content;
+    padding-bottom: 6px;
+    border-bottom: 3px solid;
+  }
 }
 
-/**************generales************/
+/*******nosotros************/
+.headerNosotros {
+  background-image: url(./assets/Banner-Nosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+
+  .navbar-brand {
+    color: $colorBlanco;
+  }
+
+  .nav-link {
+    color: $colorBlanco;
+  }
+
+  &__info{
+    text-align: center;
+    margin-top: 80px;
+    color: $colorBlanco;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+
+}
+
+
+.section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+    .section__info{
+        &__resena{
+            text-transform: uppercase;
+                margin: 0;
+                font-size: 12px;
+        }
+        &__parrafo{
+            color: $colorGris;
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.section__cta{
+    background-color: $colorAzul;
+    margin-top: 30px;
+    color: $colorBlanco;
+    padding: 3%;
+
+    &__info{
+        font-weight: bold;
+        font-size: 24px;
+
+
+        .__wp{
+            font-weight: lighter;
+            font-size: 16px;
+        }
+    }
+    &__btn__wp{
+       padding: 0.5% 3%;
+       border: none;
+       background-color: transparent;
+       border: 1px solid $colorBlanco;
+       color: $colorBlanco;
+       
+       &:hover{
+        background-color: #007c0a;
+        transition: 0.5s;
+       }
+    }
+}
+
+/*******serrvicios*************/
+
+.headerServicios {
+
+    background-image: url(/assets/Banner-Nosotros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.headerServicios {
+
+    &__info {
+        text-align: center;
+        margin-top: 80px;
+        color: $colorBlanco;
+    }
+.navbar-brand {
+    color: $colorBlanco;
+}
+
+.nav-link {
+    color: $colorBlanco;
+}
+
+}
+
+.section__servicios {
+
+    margin-bottom: 10%;
+
+    &__tittle {
+        text-align: center;
+        justify-content: center;
+        padding: 5% 1%;
+    }
+
+    &__img{
+        position: relative  ;
+    }
+}
+
+
+.servicios-container {
+     position: absolute;
+     top: 80%;
+     left: 0;
+     right: 0;
+     text-align: center;
+
+     h4{
+        color: $colorBlanco;
+        text-transform: uppercase;
+        margin: 0;
+     }
+     p{
+        color: $colorBlanco;
+     }
+
+}
