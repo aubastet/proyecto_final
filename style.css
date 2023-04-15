@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 body {
   box-sizing: border-box;
 }
@@ -6,6 +7,17 @@ body {
   width: 120rem;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.tittle-font {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 3.3rem;
+  color: #518768;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
 }
 
 /**************generales************/
@@ -20,6 +32,15 @@ body {
 }
 .header .navbar-brand {
   color: #fff;
+  font-family: "Dancing Script", cursive;
+  background-color: #546b91;
+  padding: 0.5% 1%;
+  border-radius: 20px;
+}
+.header .navbar-brand:hover {
+  color: #546b91;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
 }
 .header .nav-link {
   color: #fff;
@@ -32,9 +53,9 @@ body {
 }
 .header__title {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 12em;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
 }
 .header__slogan {
   color: #546b91;
@@ -44,9 +65,26 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   padding-bottom: 6px;
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
+  letter-spacing: 5px;
 }
 
+.fade-in {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*******nosotros************/
 .headerNosotros {
   background-image: url(./assets/Banner-Nosotros.jpg);
@@ -59,6 +97,15 @@ body {
 }
 .headerNosotros .navbar-brand {
   color: #fff;
+  font-family: "Dancing Script", cursive;
+  background-color: #546b91;
+  padding: 0.5% 1%;
+  border-radius: 20px;
+}
+.headerNosotros .navbar-brand:hover {
+  color: #546b91;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
 }
 .headerNosotros .nav-link {
   color: #fff;
@@ -72,6 +119,7 @@ body {
   font-weight: 600;
   font-size: 60px;
   text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
 }
 
 .section {
@@ -84,19 +132,21 @@ body {
 .section .section__info__resena {
   text-transform: uppercase;
   margin: 0;
+  padding-top: 4%;
   font-size: 12px;
 }
 .section .section__info__parrafo {
   color: #7a7a7a;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
+  font-size: 1.1em;
 }
 
 .section__cta {
   background-color: #546b91;
-  margin-top: 30px;
+  margin-top: 50px;
   color: #fff;
-  padding: 3%;
+  padding: 4%;
 }
 .section__cta__info {
   font-weight: bold;
@@ -114,7 +164,7 @@ body {
   color: #fff;
 }
 .section__cta__btn__wp:hover {
-  background-color: #007c0a;
+  background-color: #1d232c;
   transition: 0.5s;
 }
 
@@ -134,8 +184,23 @@ body {
   margin-top: 80px;
   color: #fff;
 }
+.headerServicios__title {
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+}
 .headerServicios .navbar-brand {
   color: #fff;
+  font-family: "Dancing Script", cursive;
+  background-color: #546b91;
+  padding: 0.5% 1%;
+  border-radius: 20px;
+}
+.headerServicios .navbar-brand:hover {
+  color: #546b91;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
 }
 .headerServicios .nav-link {
   color: #fff;
@@ -159,6 +224,9 @@ body {
   left: 0;
   right: 0;
   text-align: center;
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.6392156863);
+  padding: 2%;
 }
 .servicios-container h4 {
   color: #fff;
@@ -167,4 +235,406 @@ body {
 }
 .servicios-container p {
   color: #fff;
+}
+
+/*******Promocion**********/
+.headerPromocion {
+  background-image: url(/assets/Banner-Nosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.headerPromocion__info {
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+.headerPromocion__title {
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+}
+.headerPromocion .navbar-brand {
+  color: #fff;
+}
+.headerPromocion .nav-link {
+  color: #fff;
+}
+
+.container__header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+}
+.container__header_1 {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container__header_2 {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.container__header_0 {
+  background-color: #ffffff;
+}
+
+.container_iconos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30% 30% 30%;
+}
+
+svg.bi.bi-sun {
+  color: #ffffff;
+  background-color: #a5b7d4;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+svg.bi.bi-buildings {
+  color: #ffffff;
+  background-color: #a5b7d4;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+svg.bi.bi-cash {
+  color: #ffffff;
+  background-color: #a5b7d4;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.text-icon {
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+.container__img {
+  text-align: center;
+}
+.container__img__imagen {
+  width: 85%;
+  height: 510px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #eeeeee;
+}
+
+.container__img {
+  text-align: center;
+}
+.container__img__imagen-2 {
+  width: 110%;
+  height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container__texto {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 7%;
+  color: #7a7a7a;
+}
+
+.container__texto2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.section__cta {
+  background-color: #546b91;
+  margin-top: 50px;
+  color: #fff;
+  padding: 4%;
+}
+.section__cta__info {
+  font-weight: 600;
+  font-size: 24px;
+}
+.section__cta__info .__wp {
+  font-weight: lighter;
+  font-size: 16px;
+}
+.section__cta__btn__wp_p {
+  padding: 0.9% 6%;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #546b91;
+  color: #546b91;
+}
+.section__cta__btn__wp_p:hover {
+  background-color: #1d232c;
+  transition: 0.5s;
+}
+
+/*********Contacto*********/
+.back-form {
+  background-image: url(/assets/back-form-.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  background-color: #546b91;
+  padding: 0.5% 1%;
+  border-radius: 20px;
+}
+
+.navbar-brand:hover {
+  color: #546b91;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+.headerContacto__title {
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+}
+
+.headerContacto__info {
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+.headerContacto .navbar-brand {
+  color: #fff;
+}
+.headerContacto .nav-link {
+  color: #fff;
+}
+
+.back-form-blur {
+  background-color: rgba(255, 149, 19, 0.2);
+  width: 50%;
+  height: 60vh;
+  padding: 2%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 21px;
+  filter: blur(5px);
+}
+
+.section-contacto {
+  padding: 2%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+}
+
+.text-contacto {
+  font-size: 2.3em;
+  color: #013370;
+  margin-bottom: 8%;
+  font-family: "Dancing Script", cursive !important;
+}
+
+.btn-form {
+  width: 80%;
+  margin-top: 10px;
+}
+
+input.btn-form {
+  padding: 2%;
+  border: none;
+  background-color: #546b91;
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.caja {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  outline: 0;
+  border-bottom: 3px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.3490196078);
+}
+
+/*********responsive**********/
+@media only screen and (max-width: 576px) {
+  .section .section__info__parrafo {
+    width: 90%;
+  }
+  .section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  img.servicios-img {
+    width: 19em;
+    margin-top: 14px;
+  }
+  /**promocion**/
+  .container__header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+  }
+  .container__header_1 {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .container__header_2 {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .container__header_0 {
+    background-color: #ffffff;
+  }
+  /***nosotros***/
+  .headerNosotros__info {
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+  }
+  /**promocion**/
+  .container_iconos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 35% 35% 35%;
+  }
+  .text-icon {
+    font-size: 1em;
+  }
+  .headerPromocion__info {
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    margin-left: -1%;
+  }
+  .container__header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .container__texto {
+    width: 95%;
+  }
+  .container__header_3 {
+    margin-bottom: 10%;
+  }
+  .container__img__imagen {
+    width: 100%;
+    height: 200px;
+  }
+  /***servicios*****aiudaaaaaaaa XDD****/
+  .headerServicios__info {
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+  }
+  /**contacto**/
+  .back-form {
+    background-image: url(/assets/back-form-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  .section-contacto {
+    top: 30%;
+  }
+  .back-form-blur {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+  }
+  label {
+    color: white;
+  }
+  .headerContacto__title {
+    position: absolute;
+    top: 20%;
+    margin-left: 5%;
+  }
+  /***nav***/
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    position: relative !important;
+    z-index: 1;
+  }
+  a .navbar-brand {
+    color: #546b91;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+    padding: 0% 15% !important;
+  }
+  [type=button]:not(:disabled),
+  [type=reset]:not(:disabled),
+  [type=submit]:not(:disabled),
+  button:not(:disabled) {
+    cursor: pointer;
+    background-color: rgba(84, 107, 145, 0.6392156863);
+  }
+  ul.navbar-nav {
+    background-color: rgba(84, 107, 145, 0.6392156863);
+    padding: 5%;
+    border-radius: 10px;
+  }
+  .header__title {
+    font-size: 5em;
+    margin-top: -40%;
+  }
 }/*# sourceMappingURL=style.css.map */
