@@ -21,8 +21,40 @@ p {
 }
 
 /**************generales************/
+/****linea-inferior-nav***/
+a {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.8s;
+}
+
+a:hover:after {
+  width: 100%;
+  background: #ffffff;
+}
+
+/*******/
+.size-nav {
+  font-size: 1.1em;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
 .header {
-  background-image: url(./assets/fondo-inicio-1.jpg);
+  background-image: url(./assets/fondo-inicio-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +88,7 @@ p {
   font-size: 12em;
   color: #fff;
   font-family: "Dancing Script", cursive;
+  text-shadow: 4px 4px 11px #000000;
 }
 .header__slogan {
   color: #546b91;
@@ -67,6 +100,7 @@ p {
   padding-bottom: 6px;
   border-bottom: 2px solid;
   letter-spacing: 5px;
+  text-shadow: 4px 4px 11px #000000;
 }
 
 .fade-in {
@@ -87,7 +121,7 @@ p {
 }
 /*******nosotros************/
 .headerNosotros {
-  background-image: url(./assets/Banner-Nosotros.jpg);
+  background-image: url(./assets/Banner-ciudad-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,6 +196,7 @@ p {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+  border-radius: 5px;
 }
 .section__cta__btn__wp:hover {
   background-color: #1d232c;
@@ -170,7 +205,7 @@ p {
 
 /*******serrvicios*************/
 .headerServicios {
-  background-image: url(/assets/Banner-Nosotros.jpg);
+  background-image: url(./assets/Banner-ciudad-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,7 +274,7 @@ p {
 
 /*******Promocion**********/
 .headerPromocion {
-  background-image: url(/assets/Banner-Nosotros.jpg);
+  background-image: url(./assets/Banner-ciudad-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -379,10 +414,13 @@ svg.bi.bi-cash {
   background-color: transparent;
   border: 2px solid #546b91;
   color: #546b91;
+  border-radius: 5px;
 }
 .section__cta__btn__wp_p:hover {
   background-color: #1d232c;
   transition: 0.5s;
+  color: #fff;
+  border: 2px solid #1d232c;
 }
 
 /*********Contacto*********/
@@ -430,7 +468,7 @@ svg.bi.bi-cash {
 }
 
 .back-form-blur {
-  background-color: rgba(255, 149, 19, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 50%;
   height: 60vh;
   padding: 2%;

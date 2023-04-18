@@ -28,9 +28,43 @@ body {
 
 /**************generales************/
 
+/****linea-inferior-nav***/
+a {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+}
+
+a:hover:after {
+  width: 100%;
+  background: #ffffff;
+}
+ 
+
+/*******/
+
+.size-nav {
+  font-size: 1.1em;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: rgb(255 255 255)!important;
+   
+} 
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .header {
-  background-image: url(./assets/fondo-inicio-1.jpg);
+  background-image: url(./assets/fondo-inicio-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,6 +104,7 @@ body {
     font-size: 12em;
     color: $colorBlanco;
     font-family: 'Dancing Script', cursive;
+        text-shadow: 4px 4px 11px #000000;
     
   }
 
@@ -83,6 +118,7 @@ body {
     padding-bottom: 6px;
     border-bottom: 2px solid;
     letter-spacing: 5px;
+        text-shadow: 4px 4px 11px #000000;
   }
 }
 .fade-in {
@@ -145,7 +181,7 @@ body {
 
 /*******nosotros************/
 .headerNosotros {
-  background-image: url(./assets/Banner-Nosotros.jpg);
+  background-image: url(./assets/Banner-ciudad-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,6 +273,7 @@ body {
        background-color: transparent;
        border: 1px solid $colorBlanco;
        color: $colorBlanco;
+        border-radius: 5px;
        
        &:hover{
         background-color: $colorAzulOscuro;
@@ -249,7 +286,7 @@ body {
 
 .headerServicios {
 
-    background-image: url(/assets/Banner-Nosotros.jpg);
+    background-image: url(./assets/Banner-ciudad-web.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -338,7 +375,7 @@ body {
 
 .headerPromocion {
 
-  background-image: url(/assets/Banner-Nosotros.jpg);
+  background-image: url(./assets/Banner-ciudad-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,10 +529,14 @@ svg.bi.bi-cash {
     background-color: transparent;
     border: 2px solid $colorAzul;
     color: $colorAzul;
+    border-radius: 5px;
+    
 
     &:hover {
       background-color: $colorAzulOscuro;
       transition: 0.5s;
+      color: $colorBlanco;
+      border: 2px solid $colorAzulOscuro;
     }
   }
 }
@@ -563,7 +604,7 @@ svg.bi.bi-cash {
 }
 
 .back-form-blur {
-  background-color: #ff951333;
+  background-color: #00000033;
   width: 50%;
   height: 60vh;
   padding: 2%;
